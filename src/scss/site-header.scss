@@ -1,0 +1,38 @@
+.site-header {
+    width: 390px;   
+}
+
+.advantages-text {
+  padding: 14px 11px 13px 10px;
+  background-color: $header-color;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.advantages-logo-block {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+  position: relative;
+  background-color: $adv-logo-block;
+}
+
+.advantages-logo-block::after {
+  content: '';
+  position: absolute;
+  background-color: #f19d2f;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  left: 236px;
+  top: 27px;
+}
+
+.advantages-logo-text {
+    color: #2C2B31;
+    font-size: 14px;
+}

@@ -1,0 +1,24 @@
+@import './scss/normalize.css';
+@import './scss/var.scss';
+@import './scss/container.scss';
+@import './scss/main-page.scss';
+@import './scss/promo.scss';
+@import './scss/site-header.scss';
+@import './scss/slider.scss';
+@import './scss/goods-info.scss';
+@import 'swiper/scss';
+@import '../node_modules/swiper/swiper-bundle.css';
+
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+
+  }
+  
+  .page {
+    height: 100%;
+  }
+

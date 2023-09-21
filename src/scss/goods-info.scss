@@ -1,0 +1,45 @@
+.goods-info-wrapper {
+  text-align: left;
+}
+
+.rating-stars {
+  display: flex;
+}
+
+.rating-stars-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.stars-list-item {
+  margin-right: 5px;
+}
+
+.product-property-controls {
+  display: flex;
+}
+
+.rating-total {
+  margin-top: 15px;
+}
+
+.color-select-title {
+  margin: 0;
+  color: #2c2b31;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.goods-info-descr {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.goods-info-descr > span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
