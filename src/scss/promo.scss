@@ -6,6 +6,10 @@
     margin-bottom: 15px;
 }
 
+.timer-title {
+  color: #fff;
+}
+
 .promo-timer-block {
   position: absolute;
   text-align: center;
@@ -23,9 +27,9 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.timer-title {
+.time-count-val, .time-count-separator {
   color: #fff;
-  font-size: 10px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;

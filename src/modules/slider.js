@@ -2,15 +2,17 @@ import Swiper from "swiper";
 
 export const init = () => {
 
-    new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 2,
         watchOverflow: true,
         centeredSlides: true,
         centeredSlidesBounds: true,
+        freeMode: true,
         // watchOverflow: true,
         // spaceBetween: 2,
+        
 
         centeredSlides: true,
         speed: 800,
@@ -19,9 +21,6 @@ export const init = () => {
             prevSlideMessage: 'Предыдущий слайд',
             nextSlideMessage: 'Следующий слайд',
         },
-        // thumbs: {
-        //     el: '.swiper-thumbs'
-        // }
 
     });
 }
