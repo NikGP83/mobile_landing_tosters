@@ -1,26 +1,26 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
+import { Thumbs } from 'swiper/modules';
+
+const commonOptions = {
+  loop: true,
+  speed: 800,
+  spaceBetween: 10,
+};
 
 export const init = () => {
+  const [slidesElement, thumbsElement] = document.querySelectorAll('.swiper');
 
-    const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 2,
-        watchOverflow: true,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        freeMode: true,
-        // watchOverflow: true,
-        // spaceBetween: 2,
-        
+  const thumbsSwiper = new Swiper(thumbsElement, {
+    ...commonOptions,
+    slidesPerView: 4,
+  });
 
-        centeredSlides: true,
-        speed: 800,
-        a11y: {
-            enabled: true,
-            prevSlideMessage: 'Предыдущий слайд',
-            nextSlideMessage: 'Следующий слайд',
-        },
-
-    });
-}
+  const swiper = new Swiper(slidesElement, {
+    ...commonOptions,
+    modules: [Thumbs],
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+  });
+  console.log(swiper);
+};
